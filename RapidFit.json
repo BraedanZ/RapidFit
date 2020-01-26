@@ -1,0 +1,799 @@
+{
+  "id": "1efa2c33-3ff6-4a96-8f36-7c63c7ca087f",
+  "name": "RapidFit",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "3c9bb7f8-1123-4722-8aea-aa33fcbb3ab6",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "bf1a24a9-dad4-46d7-a3e6-4f3b97d41759",
+          "required": false,
+          "dataType": "@exercise",
+          "name": "exercise",
+          "value": "$exercise",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "a2c40fa2-e8ee-406b-9423-a6765ee040b0",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number1",
+          "value": "$number1",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "b192ae72-d32a-4247-8e24-7f311a9f219c",
+          "required": false,
+          "dataType": "@exercise",
+          "name": "exercise1",
+          "value": "$exercise1",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "5a9954dc-ae0c-4b52-98c7-17c5535ee99d",
+          "required": false,
+          "dataType": "@exercise",
+          "name": "exercise2",
+          "value": "$exercise2",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "91c37291-2c52-4a74-8b6e-b2eea86d33f3",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number2",
+          "value": "$number2",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "ea3d80f4-5abe-4bdf-876c-f9ac95b742e4",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number3",
+          "value": "$number3",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": true
+        },
+        {
+          "id": "347ee0a4-c8a8-464c-8eb4-746fba68cedd",
+          "required": false,
+          "dataType": "@exercise",
+          "name": "exercise3",
+          "value": "$exercise3",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "e76f97f3-fd2d-4ba5-91ce-14bdb9ea1d5a",
+          "required": false,
+          "dataType": "@sys.number",
+          "name": "number4",
+          "value": "$number4",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "44ad5cb4-4f95-492e-be31-019ba50512ca",
+          "required": false,
+          "dataType": "@exercise",
+          "name": "exercise4",
+          "value": "$exercise4",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": "link_out_chip",
+          "platform": "google",
+          "condition": "",
+          "destinationName": "RapidFit",
+          "url": "https://sites.google.com/view/imagefordelta/p%C3%A1gina-inicial?authuser=0",
+          "lang": "en"
+        },
+        {
+          "type": 0,
+          "condition": "",
+          "speech": [
+            "You did $number $exercise and $number1 $exercise1!",
+            "Woah!  $number $exercise, $number1 $exercise1, $number2 $exercise2, $number3 $exercise3, $number4 $exercise4!",
+            "Woah!  $number $exercise, $number1 $exercise1, $number2 $exercise2, $number3 $exercise3!",
+            "Woah!  $number $exercise, $number1 $exercise1, $number2 $exercise2!",
+            "You did $number $exercise!"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "google": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "552565ef-fd92-4c15-970e-d708ff31adf2",
+      "data": [
+        {
+          "text": "Today I did ",
+          "userDefined": false
+        },
+        {
+          "text": "89",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "pull-ups",
+          "alias": "exercise",
+          "meta": "@exercise",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "five",
+          "alias": "number1",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "squats",
+          "alias": "exercise1",
+          "meta": "@exercise",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "for",
+          "alias": "number2",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "dips",
+          "alias": "exercise2",
+          "meta": "@exercise",
+          "userDefined": true
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "a",
+          "alias": "number3",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "pushup",
+          "alias": "exercise3",
+          "meta": "@exercise",
+          "userDefined": true
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "40d2a56c-aa22-499a-9211-d719f1cea057",
+      "data": [
+        {
+          "text": "I did ",
+          "userDefined": false
+        },
+        {
+          "text": "12",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "pushups",
+          "alias": "exercise",
+          "meta": "@exercise",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "for",
+          "alias": "number1",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "situps",
+          "alias": "exercise1",
+          "meta": "@exercise",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "3",
+          "alias": "number2",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "dips",
+          "alias": "exercise2",
+          "meta": "@exercise",
+          "userDefined": true
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "to",
+          "alias": "number3",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "squats",
+          "alias": "exercise3",
+          "meta": "@exercise",
+          "userDefined": true
+        },
+        {
+          "text": " today.",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "fcd4dc7a-f419-47de-9f49-cc12ab4ba0d4",
+      "data": [
+        {
+          "text": "14",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "squats",
+          "alias": "exercise",
+          "meta": "@exercise",
+          "userDefined": false
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "6",
+          "alias": "number1",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "pushups",
+          "alias": "exercise1",
+          "meta": "@exercise",
+          "userDefined": false
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "5",
+          "alias": "number2",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "pullups",
+          "alias": "exercise2",
+          "meta": "@exercise",
+          "userDefined": false
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "99",
+          "alias": "number3",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "situps",
+          "alias": "exercise3",
+          "meta": "@exercise",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "22f4d71b-f8d8-45ef-b433-6a322ef53697",
+      "data": [
+        {
+          "text": "2",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "pullups",
+          "alias": "exercise",
+          "meta": "@exercise",
+          "userDefined": false
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "6",
+          "alias": "number1",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "squats",
+          "alias": "exercise1",
+          "meta": "@exercise",
+          "userDefined": false
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "8",
+          "alias": "number2",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "dips",
+          "alias": "exercise2",
+          "meta": "@exercise",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "460c9b45-2f1f-4402-8a13-cb8be5ff6ad5",
+      "data": [
+        {
+          "text": "12",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "squats",
+          "alias": "exercise",
+          "meta": "@exercise",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "4",
+          "alias": "number1",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "situps",
+          "alias": "exercise1",
+          "meta": "@exercise",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "71",
+          "alias": "number2",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "dips",
+          "alias": "exercise2",
+          "meta": "@exercise",
+          "userDefined": true
+        },
+        {
+          "text": ", ",
+          "userDefined": false
+        },
+        {
+          "text": "3",
+          "alias": "number3",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "pushups",
+          "alias": "exercise3",
+          "meta": "@exercise",
+          "userDefined": true
+        },
+        {
+          "text": ", and ",
+          "userDefined": false
+        },
+        {
+          "text": "5",
+          "alias": "number4",
+          "meta": "@sys.number",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "pullups",
+          "alias": "exercise4",
+          "meta": "@exercise",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "e5324f17-44af-4840-9f72-0683ec8eaf93",
+      "data": [
+        {
+          "text": "I performed ",
+          "userDefined": false
+        },
+        {
+          "text": "12",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "push-ups",
+          "alias": "exercise",
+          "meta": "@exercise",
+          "userDefined": false
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "2cc4c103-801c-4ad2-83bc-02af0b292dbc",
+      "data": [
+        {
+          "text": "I did ",
+          "userDefined": false
+        },
+        {
+          "text": "4",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "squats",
+          "alias": "exercise",
+          "meta": "@exercise",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "c103c602-6637-4f33-a1a9-c25bb85a3c00",
+      "data": [
+        {
+          "text": "4",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "squats",
+          "alias": "exercise",
+          "meta": "@exercise",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "e8e01f39-3dba-4b1e-873a-de5039c5ac8f",
+      "data": [
+        {
+          "text": "98",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "squats",
+          "alias": "exercise",
+          "meta": "@exercise",
+          "userDefined": false
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "34",
+          "alias": "number1",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "pushups",
+          "alias": "exercise1",
+          "meta": "@exercise",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3070080a-e4c2-4450-8c47-4928e938d3c6",
+      "data": [
+        {
+          "text": "I just did ",
+          "userDefined": false
+        },
+        {
+          "text": "5",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "pushups",
+          "alias": "exercise",
+          "meta": "@exercise",
+          "userDefined": false
+        },
+        {
+          "text": " and ",
+          "userDefined": false
+        },
+        {
+          "text": "4",
+          "alias": "number1",
+          "meta": "@sys.number",
+          "userDefined": false
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "squats",
+          "alias": "exercise1",
+          "meta": "@exercise",
+          "userDefined": false
+        },
+        {
+          "text": ".",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": true,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}
